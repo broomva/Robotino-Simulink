@@ -1,0 +1,159 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+Background {
+	groundAngle	[ 0.9, 1.5, 1.57 ]
+	groundColor	[ 0 0.8 0,
+			  0.174249 0.82 0.187362,
+			  0.467223 0.82 0.445801,
+			  0.621997 0.67 0.600279 ]
+	skyAngle	[ 0.1, 1.2, 1.57 ]
+	skyColor	[ 0.76238 0.8 0.1427,
+			  0.277798 0.219779 0.7,
+			  0.222549 0.390234 0.7,
+			  0.60094 0.662637 0.69 ]
+}
+DEF base Transform {
+	translation	-0.0175177 -0.000794798 -0.359216
+	rotation	0.0206274 -0.0181341 0.999623  3.14083
+	scale	0.847462 0.847454 0.847454
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	0.5
+		    }
+
+	    }
+
+	    DEF rueda1 Transform {
+		    translation	0 0 1.5
+		    scale	1.07549 1.07549 1.07549
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+					}
+
+				}
+
+				geometry	Sphere {
+					radius	0.5
+				}
+
+			}
+
+			Transform {
+				translation	0 -0.6 0
+				scale	0.290007 0.290007 0.290008
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+						    }
+
+					    }
+
+					    geometry	NULL
+				    }
+
+				    Transform {
+					    translation	0.048724 1.97771 -3.07969e-006
+					    children Shape {
+						    appearance	Appearance {
+							    material	Material {
+							    }
+
+						    }
+
+						    geometry	Cylinder {
+							    height	6
+							    radius	0.3
+						    }
+
+					    }
+				    }
+				]
+			}
+		    ]
+	    }
+
+	    DEF rueda2 Transform {
+		    translation	1.2 0 -0.8
+		    scale	1.07549 1.07549 1.07549
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+					}
+
+				}
+
+				geometry	Sphere {
+					radius	0.5
+				}
+
+			}
+
+			Transform {
+				children Shape {
+					appearance	Appearance {
+						material	Material {
+						}
+
+					}
+
+					geometry	Cylinder {
+						height	1.5
+						radius	0.1
+					}
+
+				}
+			}
+		    ]
+	    }
+
+	    DEF rueda3 Transform {
+		    translation	-1.1 0 -0.8
+		    scale	0.526251 0.526251 0.526251
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+					}
+
+				}
+
+				geometry	Sphere {
+				}
+
+			}
+
+			Transform {
+				children Shape {
+					appearance	Appearance {
+						material	Material {
+						}
+
+					}
+
+					geometry	Cylinder {
+						height	3
+						radius	0.2
+					}
+
+				}
+			}
+		    ]
+	    }
+	]
+}
